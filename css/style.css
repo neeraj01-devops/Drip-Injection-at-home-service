@@ -2099,6 +2099,12 @@ button, input, select, textarea {
   letter-spacing: -0.015em;
 }
 
+.about-hero-h1 span {
+  background: linear-gradient(135deg, var(--teal-accent) 0%, var(--blue-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .about-hero-lead {
   font-size: 1.0625rem;
   color: var(--text-body);
@@ -2345,6 +2351,69 @@ button, input, select, textarea {
 .about-floating-badge-desc {
   font-size: 0.775rem;
   color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Clinical Standards Checklist (Who We Are)
+   ========================================================================== */
+.clinical-standards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.standard-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background-color: var(--bg-card);
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-card);
+  transition: all var(--transition-fast);
+}
+
+.standard-check-item:hover {
+  background-color: var(--bg-card-hover);
+  border-color: #bcd4e6;
+  transform: translateX(4px);
+}
+
+.check-icon-wrap {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--teal-light);
+  color: var(--teal-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.check-icon-wrap svg,
+.check-icon {
+  width: 18px !important;
+  height: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+  stroke-width: 2.5;
+  color: var(--teal-accent);
+  flex-shrink: 0;
+}
+
+.standard-check-text {
+  font-size: 0.9rem;
+  color: var(--text-body);
+  line-height: 1.55;
+  flex: 1;
+}
+
+.standard-check-text strong {
+  color: var(--navy-primary);
+  font-weight: 700;
 }
 
 /* ==========================================================================
